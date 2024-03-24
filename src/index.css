@@ -1,0 +1,83 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #111827;
+  color: white;
+  text-align: center;
+  /* font-family: sans-serif; */
+  /* padding: 10px; */
+}
+.components{
+  display: grid;
+  gap: 60px;
+}
+
+
+/* Phones */
+@media (max-width: 450px){
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body{
+    background-color: #111827;
+    color: white;
+    text-align: center;
+    /* font-family: sans-serif; */
+    /* padding: 10px; */
+  }
+  .components{
+    display: grid;
+    gap: 50px;
+  }
+}
+
+/* Tablets */
+@media (min-width: 451px) and (max-width: 850px) {
+  body{
+    background-color: #111827;
+    color: white;
+    text-align: center;
+    /* padding: 40px; */
+  }
+  .components{
+    display: grid;
+    gap: 100px; 
+  }
+}
+
+ /* Tablets Pro */
+ @media (min-width: 851px) and (max-width: 1000px) {
+  body{
+    background-color: #111827;
+    color: white;
+    text-align: center;
+    /* padding: 40px; */
+  }
+  .components{
+    display: grid;
+    gap: 140px;
+  }
+ }
+
+/* Laptops */
+@media (min-width: 1200px) {
+  body{
+    background-color: #1f2937;
+    color: white;
+    text-align: center;
+    padding: 40px;
+  }
+  .components{
+    display: grid;
+    gap: 100px;
+  }
+}
+
+

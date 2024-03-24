@@ -1,0 +1,613 @@
+.projects {
+  padding: 20px;
+  display: grid;
+  gap: 10px;
+}
+.project-header {
+  display: grid;
+  gap: 3px;
+}
+.projects h3 {
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-size: 25px;
+}
+.projects p {
+  font-size: 17px;
+  font-family: sans-serif;
+}
+
+.actual-projects {
+  padding: 10px;
+  display: grid;
+  gap: 15px;
+}
+
+.project {
+  /* border: 2px solid #0e7490; */
+  height: 200px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 0 5px 10px black;
+}
+.project img {
+  width: 46.5vh;
+  height: 150px;
+  margin-bottom: 20px;
+}
+.project-link {
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.3s;
+}
+.project-text {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  margin-top: -10px;
+}
+
+
+/* Phones */
+@media (max-width: 450px) {
+  .projects {
+    padding: 20px;
+    display: grid;
+    gap: 10px;
+  }
+  .project-header {
+    display: grid;
+    gap: 3px;
+  }
+  .projects h3 {
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-size: 35px;
+  }
+  .projects p {
+    font-size: 20px;
+    font-family: sans-serif;
+  }
+
+  .actual-projects {
+    padding: 10px;
+    display: grid;
+    gap: 15px;
+    justify-content: center;
+  }
+
+  .project {
+    width: 35vh;
+    height: 200px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 5px 10px black;
+  }
+  .caption{
+    display: none;
+}
+  .project img {
+    width: 100%;
+    height: 150px;
+    margin-bottom: 20px;
+  }
+  .project-link {
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s;
+  }
+  .project-text {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    margin-top: -10px;
+  }
+}
+
+/* Tablets */
+@media (min-width: 451px) and (max-width: 850px) {
+  .projects {
+    display: grid;
+    padding: 30px;
+    justify-content: center;
+  }
+  .project-header {
+    display: grid;
+    gap: 3px;
+  }
+  .projects h3 {
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 50px;
+  }
+  .projects p {
+    font-family: sans-serif;
+    font-size: 23px;
+    margin-bottom: 30px;
+  }
+
+  .actual-projects {
+    padding: 10px;
+    margin-right: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 55px;
+  }
+
+  .caption{
+    display: none;
+}
+  .project {
+    width: 120%;
+    height: 230px;
+    border: none;
+    box-shadow: 0 5px 10px black;
+  }
+  .project-link {
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s;
+  }
+  .project-link:hover {
+    transform: translateY(-2px) scale(1.05);
+  }
+  .project-link:active {
+    transform: translateY(2px);
+  }
+  .project img {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    width: 100%;
+    height: 180px;
+    margin-bottom: 20px;
+  }
+  .project-text {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    margin-top: -10px;
+    font-family: sans-serif;
+  }
+}
+
+/* Tablets Pro */
+@media (min-width: 851px) and (max-width: 1000px) {
+  .projects {
+    display: grid;
+    padding: 30px;
+    justify-content: center;
+  }
+  .project-header {
+    display: grid;
+    gap: 3px;
+  }
+  .projects h3 {
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 50px;
+  }
+  .projects p {
+    font-family: sans-serif;
+    font-size: 23px;
+    margin-bottom: 30px;
+  }
+
+  .actual-projects {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 50px;
+  }
+
+  .project {
+    width: 100%;
+    height: 230px;
+    border: none;
+    box-shadow: 0 5px 10px black;
+  }
+  .project-link {
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s;
+  }
+  .caption{
+    display: none;
+}
+  .project-link:hover {
+    transform: translateY(-2px) scale(1.05);
+  }
+  .project-link:active {
+    transform: translateY(2px);
+  }
+  .project img {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    width: 100%;
+    height: 180px;
+    margin-bottom: 20px;
+  }
+  .project-text {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    margin-top: -10px;
+    font-family: sans-serif;
+  }
+}
+
+/* Something */
+@media (min-width: 1001px) and (max-width: 1109px) {
+  .projects {
+    display: grid;
+    padding: 30px;
+    justify-content: center;
+  }
+  .project-header {
+    display: grid;
+    gap: 3px;
+  }
+  .projects h3 {
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 50px;
+  }
+  .projects p {
+    font-family: sans-serif;
+    font-size: 22px;
+    margin-bottom: 30px;
+  }
+
+  .actual-projects {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 50px;
+  }
+
+  .project {
+    width: 40vh;
+    height: 45vh;
+    border: none;
+    box-shadow: 0 5px 10px black;
+  }
+  .project-link {
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s;
+  }
+  .project-link:hover {
+    transform: translateY(-2px) scale(1.05);
+  }
+  .project-link:active {
+    transform: translateY(2px);
+  }
+  .caption{
+    display: none;
+}
+  .project img {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    width: 39.5vh;
+    height: 180px;
+    margin-bottom: 20px;
+  }
+  .project-text {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    margin-top: -10px;
+    font-family: sans-serif;
+  }
+}
+
+/* Mini Laptop */
+@media (min-width: 1110px) and (max-width: 1200px) {
+  .projects {
+    display: grid;
+    padding: 30px;
+    justify-content: center;
+  }
+  .project-header {
+    display: grid;
+    gap: 3px;
+  }
+  .projects h3 {
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 50px;
+  }
+  .projects p {
+    font-family: sans-serif;
+    font-size: 22px;
+    margin-bottom: 30px;
+  }
+
+  .caption{
+    display: none;
+}
+  .actual-projects {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 50px;
+  }
+
+  .project {
+    width: 40vh;
+    height: 35vh;
+    border: none;
+    box-shadow: 0 5px 10px black;
+  }
+  .project-link {
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    /* color: red; */
+    color: #fff;
+    transition: all 0.3s;
+  }
+  .project-link:hover {
+    transform: translateY(-2px) scale(1.05);
+  }
+  .project-link:active {
+    transform: translateY(2px);
+  }
+  .project img {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    width: 39.5vh;
+    height: 180px;
+    margin-bottom: 20px;
+  }
+  .project-text {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    margin-top: -10px;
+    font-family: sans-serif;
+  }
+}
+
+/* Laptop */
+@media (min-width: 1200px) and (max-width: 1300px) {
+  .projects {
+    display: grid;
+    padding: 30px;
+    justify-content: center;
+  }
+  .project-header {
+    display: grid;
+    gap: 3px;
+  }
+  .projects h3 {
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 50px;
+  }
+  .projects p {
+    font-family: sans-serif;
+    font-size: 22px;
+    margin-bottom: 30px;
+  }
+
+  .actual-projects {
+    padding: 10px;
+    /* display: grid;
+        grid-template-columns: auto auto auto;  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  /* .project{
+        width: 40vh;
+        height: 35vh;
+        border: none;
+        box-shadow: 0 5px 10px black;
+    }
+    .project-link{
+        font-size: 18px;
+        font-weight: 600;
+        cursor: pointer;
+        text-decoration: none;
+        color: #fff;
+        transition: all .3s;
+    }
+    .project-link:hover{
+        transform: translateY(-2px) scale(1.05);
+    }
+    .project-link:active{
+        transform: translateY(2px);
+    }
+    .project img{
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        width: 39.5vh;                               
+        height: 180px;
+        margin-bottom: 20px;
+    }
+    .project-text{
+        display: flex;
+        justify-content: center;
+        justify-content: space-around;
+        margin-top: -10px;
+        font-family: sans-serif;
+    } */
+
+    .project {
+        border: none;
+        box-shadow: none;
+        position: relative;
+        /* overflow: hidden; */
+      }
+      .project-link {
+        position: relative;
+        display: grid;
+        margin-left: 165%;
+        font-size: 18px;
+        font-weight: 600;
+        cursor: pointer;
+        text-decoration: none;
+        color: #fff;
+        transition: all 0.3s;
+      }
+      .project-link:hover {
+        transform: translateY(-2px) scale(1.05);
+      }
+      .project-link:active {
+        transform: translateY(2px);
+      }
+      .project img {
+        width: 45vh;
+        height: 35vh;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        box-shadow: 0 5px 10px black;
+      }
+      .project:hover img {
+        filter: blur(5px) brightness(90%);
+      }
+      .project-text {
+        display: flex;
+        justify-content: center;
+        justify-content: space-around;
+        margin-top: -10px;
+        font-family: sans-serif;
+        position: absolute;
+        bottom: -20%;
+        left: 15%;
+        opacity: 0;
+      }
+      .caption {
+        position: absolute;
+        top: -5%;
+        left: 50%;
+        transform: translate(-50%, 20%);
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 16px;
+        line-height: 1.5;
+        font-weight: 800;
+        font-family: "Coiny";
+        text-align: center;
+        opacity: 0;
+      }
+    
+      .project:hover .caption,
+      .project:hover .project-text {
+        opacity: 1; /* Adjust opacity as needed */
+      }
+}
+
+/* Higher Laptops */
+@media (min-width: 1301px) {
+  .projects {
+    display: grid;
+    padding: 30px;
+    justify-content: center;
+  }
+  .project-header {
+    display: grid;
+    gap: 3px;
+  }
+  .projects h3 {
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 50px;
+    z-index: 100;
+  }
+  .projects p {
+    font-family: sans-serif;
+    font-size: 22px;
+    margin-bottom: 30px;
+  }
+
+  .actual-projects {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .project {
+    border: none;
+    box-shadow: none;
+    position: relative;
+    /* overflow: hidden; */
+  }
+  .project-link {
+    position: relative;
+    display: grid;
+    margin-left: 165%;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s;
+  }
+  .project-link:hover {
+    transform: translateY(-2px) scale(1.05);
+  }
+  .project-link:active {
+    transform: translateY(2px);
+  }
+  .project img {
+    width: 45vh;
+    height: 35vh;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px black;
+  }
+  .project:hover img {
+    filter: blur(5px) brightness(90%);
+  }
+  .project-text {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    margin-top: -10px;
+    font-family: sans-serif;
+    position: absolute;
+    bottom: -20%;
+    left: 15%;
+    opacity: 0;
+  }
+  .caption {
+    position: absolute;
+    top: -5%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 800;
+    font-family: "Coiny";
+    text-align: center;
+    opacity: 0;
+  }
+
+  .project:hover .caption,
+  .project:hover .project-text {
+    opacity: 1; /* Adjust opacity as needed */
+  }
+}
